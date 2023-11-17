@@ -1,0 +1,82 @@
+.form-program {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid $platinum;
+}
+
+.form-program__list {
+  padding: 0;
+  list-style: none;
+  margin: 20px 0 0;
+}
+
+.form-program__list__item {
+  margin-bottom: 12px;
+}
+
+.form-program__check-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-program__check {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+  width: 100%;
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.form-program__check::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $platinum;
+  border-radius: 50%;
+}
+
+.form-program__check-input:checked+.form__check::after {
+  display: block;
+}
+
+.form-program__check::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  display: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $green;
+}
+
+@media (min-width: $tablet-width) {
+  .form-program {
+    padding: 23px 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-program {
+    width: 45%;
+  }
+}

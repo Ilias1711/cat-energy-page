@@ -1,0 +1,282 @@
+.demo__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.demo__toggle {
+  width: 50%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: $green;
+}
+
+.demo {
+  padding-top: 17px;
+  padding-bottom: 24px;
+  background-color: $platinum;
+}
+
+.demo__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $black;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+
+.demo__text {
+  font-family: $fontLato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  width: 95%;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.demo__stats-list {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+  gap: 32px;
+}
+
+.demo__stats-item {
+  position: relative;
+  display: flex;
+  width: 124px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid $lightgrey;
+  border-radius: 5px;
+}
+
+.demo__stats-value {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black;
+  margin: auto;
+  background-color: $platinum;
+}
+
+.demo__stats-subtitle {
+  font-family: $fontLato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  color: $grey;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -14px;
+  margin: 0 auto;
+  width: 110px;
+  background-color: $platinum;
+  top: 50px;
+}
+
+.demo__price {
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 40px;
+}
+
+.demo__button-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 219px;
+  margin: 15px auto 0;
+}
+
+.demo__button-progress {
+  width: 84px;
+  height: 14px;
+  padding: 3px 5px;
+  border: 1px solid $lightgrey;
+  border-radius: 10px;
+  background-color: $white;
+}
+
+.demo__button-before {
+  font-family: $fontOswald;
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  width: 60px;
+  cursor: pointer;
+}
+
+.demo__button-after {
+  font-family: $fontOswald;
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  width: 60px;
+  cursor: pointer;
+}
+
+.demo__stats-item--weight {
+  margin-right: 20px;
+}
+
+.demo__stats-item--days {
+  margin-left: 20px;
+}
+
+.demo__range {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .demo__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .demo {
+    position: relative;
+    padding-top: 44px;
+    padding-bottom: 65px;
+    background-color: $platinum;
+  }
+
+  .demo__title {
+    font-size: 60px;
+    margin-bottom: 65px;
+  }
+
+  .demo__text {
+    width: 100%;
+    margin-bottom: 51px;
+  }
+
+  .demo__stats-list {
+    width: 370px;
+    justify-content: space-between;
+  }
+
+  .demo__stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .demo__price {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    width: 180px;
+    margin: 0;
+  }
+
+  .demo__button-block {
+    width: 570px;
+    margin: 13px auto 0;
+  }
+
+  .demo__button-progress {
+    width: 427px;
+    height: 35px;
+    border: 0;
+    background-color: transparent;
+    transform: translate(4px, 11px);
+  }
+
+  .demo__range {
+    display: block;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: $lightgrey;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .demo__toggle {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    margin-top: -17px;
+    width: 34px;
+    height: 34px;
+    border: 1px solid $lightgrey;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 $lightgrey;
+    background-color: $white;
+    cursor: pointer;
+  }
+
+  .demo__progress {
+    margin-top: 81px;
+    background-color: $platinum;
+  }
+
+  .demo__stats-subtitle {
+    background-color: $smokywhite;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .demo {
+    background-color: $smokywhite;
+  }
+
+  .demo__wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
+    display: flex;
+  }
+
+  .demo__title {
+    width: 435px;
+    margin-top: 51px;
+    margin-bottom: 145px;
+  }
+
+  .demo__text {
+    margin-bottom: 68px;
+    width: 435px;
+  }
+
+  .demo__stats {
+    flex-wrap: wrap;
+    width: 435px;
+  }
+
+  .demo__progress {
+    width: 590px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .demo__price {
+    display: flex;
+    justify-content: space-between;
+    width: 325px;
+    text-align: left;
+  }
+
+  .demo__button-block {
+    background-color: transparent;
+  }
+}

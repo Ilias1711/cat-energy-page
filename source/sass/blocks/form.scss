@@ -1,0 +1,273 @@
+.form__options {
+  padding-top: 10px;
+  padding-bottom: 31px;
+}
+
+.form__set-options {
+  padding-bottom: 25px;
+}
+
+.form__input-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form__set-options--label {
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.form__set-options--input {
+  font-family: $fontOswald;
+  width: 100%;
+  margin-left: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 12px 15px;
+  border: 1px solid $platinum;
+  outline: 0;
+}
+
+.form__set-contact {
+  padding-top: 7px;
+}
+
+.form__set-contact--head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 35px;
+}
+
+.form__set-contact--title {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $black;
+  max-width: 205px;
+  padding-right: 24px;
+  margin: 0;
+  background-color: $white;
+}
+
+.form__set-contact--head::before {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 44px;
+  background-color: $green;
+}
+
+.form__set-contact--foot {
+  margin-top: 15px;
+}
+
+.form__set-contact--block {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form__set-contact--block:last-child {
+  margin-bottom: 0;
+}
+
+.form__set-contact--label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $black;
+  white-space: nowrap;
+}
+
+.form__set-contact--input {
+  font-family: $fontOswald;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 12px 15px;
+  border: 1px solid $lightgrey;
+  outline: 0;
+  width: 100%;
+  margin-left: 13px;
+}
+
+.form__contact-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.form__set-comment--text {
+  width: 100%;
+  height: 150px;
+  margin-top: 14px;
+  resize: none;
+  font-family: $fontOswald;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 12px 15px;
+  border: 1px solid $platinum;
+  outline: 0;
+}
+
+.form__button-block {
+  text-align: center;
+}
+
+.form__button {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.form__set-comment {
+  margin-top: 26px;
+}
+
+.form__check-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid $black;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+
+  .form__options {
+    padding-top: 5px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 40px;
+  }
+
+  .form__input-block {
+    padding-bottom: 20px;
+  }
+
+  .form__set-options--label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .form__set-options--input {
+    margin-left: 15px;
+    padding: 10px 20px;
+  }
+
+  .form__set-program {
+    padding: 23px 27px;
+    margin-bottom: 65px;
+  }
+
+  .form__set-contact {
+    margin-bottom: 65px;
+  }
+
+  .form__set-contact--title {
+    margin-bottom: 76px;
+    margin-left: 30px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  .form__set-contact--foot {
+    margin-left: 30px;
+  }
+
+  .form__set-contact--head::before {
+    width: 200%;
+    right: -60px;
+  }
+
+  .form__set-contact--block {
+    margin-bottom: 20px;
+  }
+
+  .form__set-contact--label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .form__set-contact--input {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .form__set-comment {
+    margin-bottom: 55px;
+  }
+
+  .form__button-block {
+    display: flex;
+    align-items: center;
+  }
+
+  .form__button {
+    width: 284px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-right: 60px;
+  }
+
+  .form__note {
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-block {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 80px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .form__set-options {
+    width: 45%;
+  }
+
+  .form__set-program {
+    width: 45%;
+  }
+
+  .form__set-contact {
+    width: 100%;
+  }
+
+  .form__set-comment {
+    width: 100%;
+  }
+
+
+  .form__button {
+    width: 570px;
+  }
+
+}

@@ -1,0 +1,122 @@
+.head-block {
+  padding-top: 26px;
+  background-repeat: no-repeat;
+  background-image: url("../img/index-background-mobile@2x.jpg");
+  background-position: 50% -10px;
+  background-size: 100% 305px;
+}
+
+.head-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.head-block__button {
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  height: 40px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: 3px;
+}
+
+.head-block__img {
+  width: 100%;
+  text-align: center;
+}
+
+.head-block__title {
+  color: $white;
+  text-align: center;
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 26px;
+}
+
+.head-block__text {
+  color: $white;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  text-align: center;
+  margin-top: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .head-block {
+    padding-top: 52px;
+    padding-bottom: 533px;
+    background-image: url("../img/index-can-desktop@2x.png");
+    background-position: 30px 251px;
+    background-size: 709px 609px;
+  }
+
+  .head-block__button {
+    order: 2;
+    width: 244px;
+    height: 54px;
+  }
+
+  .head-block__wrapper {
+    padding-left: 90px;
+    padding-right: 30px;
+  }
+
+  .head-block__title {
+    font-size: 60px;
+    line-height: 60px;
+    width: 420px;
+    margin-bottom: 40px;
+  }
+
+  .head-block__title,
+  .head-block__text {
+    color: $black;
+    text-align: left;
+  }
+
+  .head-block__img {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .head-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 602px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .head-block {
+    background-image: url("../img/ibd1x.jpg");
+    background-position: calc(100% + 70px) 0;
+    background-size: 680px 696px;
+    padding-bottom: 10px;
+  }
+
+  .head-block__picture {
+    order: 4;
+  }
+
+  .head-block__img {
+    display: inline-block;
+    width: 597px;
+    margin-left: -48px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .head-block {
+      background-image: url("../img/ibd2x.jpg");
+    }
+  }
+}
